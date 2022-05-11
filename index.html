@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0151)file:///C:/Users/Administrator/Desktop/bai/BAIT_2022%E5%B9%B45%E6%9C%8811%E6%97%A5%20222705change/2022%E5%B9%B45%E6%9C%8812%E6%97%A5%20001032/BAIT.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>浙江财经大学健康通行码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./index_files/main.css">
+<script src="./index_files/jquery-1.7.2.min.js.下载"></script><script type="text/javascript" src="./index_files/jquery.qrcode.min.js.下载"></script><script>
+    jQuery(function(){
+
+        jQuery('#output').qrcode({
+            render	: "table",
+            width: 170,
+            height: 170,
+            text	: "https://e.zufe.edu.cn/infoplus/form/enull/render",
+            render: "canvas", //也可以替换为table
+            foreground: "#1E90FF",
+            background: "#FFF"
+        });
+        border();
+        showTime();
+    })
+    function border() {
+        var jz="已加强接种";
+        var bor=document.getElementById('border');
+        if("已接种"==jz){
+            bor.setAttribute("src","./images/border.png");
+            /*bor.style.top="-2px";
+            bor.style.width="299px";
+            bor.style.left="34px";
+            bor.style.position="absolute";
+            var pList=document.querySelectorAll(".qr p");
+            pList[0].style.color="#676767";
+            pList[1].style.color="#929191";*/
+        }else {
+            bor.setAttribute("src","./images/border.png");
+        }
+    }
+    //获取系统时间
+    function showTime() {
+        nowtime = new Date();
+        year = nowtime.getFullYear();//年
+        month = nowtime.getMonth() + 1;//月
+        day = nowtime.getDate();//日
+        hour = nowtime.getHours();//时
+        minutes = nowtime.getMinutes(); //分
+        seconds = nowtime.getSeconds(); //秒
+        //文字增加空格
+        document.getElementById("div_timer").style = "white-space:pre;";
+        //显示时间
+        document.getElementById("div_date").innerText = p(month) + "月" + p(day) + "日 ";
+        document.getElementById("div_timer").innerText = p(hour) + ":" + p(minutes) + ":" + p(seconds);
+    }
+
+    setInterval("showTime()", 1000);
+
+    //月日时分秒小于10补0
+    function p(s) {
+        return s < 10 ? '0' + s : s;
+    }
+
+</script></head>
+
+
+
+
+
+<body class="blue-bg">
+
+<div class="content-box">
+    <div class="now-date" id="div_date">05月12日 </div>
+    <div class="now-time" id="div_timer" style="white-space: pre;">00:39:23</div>
+    <div style="text-align:center;">
+        <img style="width: 90%;height: 3px;" src="./index_files/分割条.png">
+    </div>
+    <div class="sss">
+        <div class="link-btn" style="padding-top: 5px;">
+            <a href="https://e.zufe.edu.cn/zc/zx" class=""><img style="width: 60px;" src="./index_files/an3.png"></a>
+        </div>
+        <div class="top-title">
+            <p style="font-size:1.0rem;font-weight: bold;">谢嘉豪</p>
+            <p style="font-size:13px;">法学院</p>
+        </div>
+
+    </div>
+    
+    
+        <div class="qr">
+            
+                <div id="output" style="width: 170px;margin: 0px auto;margin-bottom: 10px;margin-top: 5px;position: relative">
+                    <img id="border" src="./index_files/border.png">
+             </div>
+                <p style="color: black;margin-bottom: 20px">疫苗接种情况  
+                    
+                        <span style="font-size:1.0rem;color: #4bd47a;font-weight: bold;">已加强接种</span>
+                    
+                    
+                </p>
+                <div>
+                    
+                    
+                        <img style="width: 75%;" src="./index_files/xstx.png">
+                    
+                </div>
+                
+            
+            
+        </div>
+    
+
+   
+    
+        <div style="width: 100%;text-align: center;padding: 0px 0px 5px 0px;position: relative;margin: auto;">
+            <div style="width: 90%;margin: 0px auto;position: relative">
+                <div style="color: black;padding-top: 10px;">
+                    <img style="width: 100%;height: 35px" src="./index_files/cdlhsbg.png">
+                    <div style="position: absolute;margin-left: 52%;top: 34.5%;font-size: 16px;font-weight:bold;color: white">05-11 06:04</div>
+                </div>
+            </div>
+        </div>
+    
+    
+        
+    <div style="text-align:center;">
+        <img style="width: 90%;height: 3px;" src="./index_files/分割条.png">
+    </div>
+    <div style="text-align:center;padding-top: 20px">
+        <a href="https://e.zufe.edu.cn/infoplus/form/JSXNYQSB/start?back=1&amp;x_posted=true"><img style="width:90px;" src="./index_files/txmsq.png"></a> 
+        <a href="https://e.zufe.edu.cn/infoplus/form/FXSQ/start?back=1&amp;x_posted=true"><img style="width:100px;" src="./index_files/xsfxsq.png"></a> 
+        <a target="_blank" href="https://xc.caict.ac.cn/#/login"><img style="width:90px;" src="./index_files/ckxcm.png"></a>
+        
+    </div>
+    
+    
+</div>
+
+</body></html>
